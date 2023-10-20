@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<title>marconfee's survey form</title>
+<link rel="styleshheet"href="form.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    header{
+        text-align: center;
+        font-family: sans-serif;
+        
+    }
+    input{
+        width: 90%;
+        height: 10px;
+    }
+    label{
+        display:block;
+        margin-bottom: 10px;
+    }
+    .form-control input,
+    .form-control select,
+    .form-control textarea{  
+        display: block;
+        padding: 10px;
+        width: 90%;
+     }
+        form{
+            margin: 50px auto;
+            padding: 30px 30px;
+            max-width: 450px;
+            background-color: white;
+        }
+        .form-control input[type="radio"]
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width:auto;
+
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        button{
+            display:block;
+            width: 100%;
+            padding: 10px 10px;
+            background-color: lightgreen;
+        }
+        body{
+            background-color: lightcyan;
+            font-family:tahoma;
+        }
+</style>
+ </head> 
+ <body>
+    <header>
+        <h1 id="title">Marconfee's survey form </h1> 
+        <p id="description">Thanks for choosing marconfee's store!</p>
+    </header>
+    <form action="" id="survey-form">
+        <fieldset>
+        <div class="form-control">
+    <label>name
+        <input type="text" id="name"name="Name"placeholder="Enter  Your Name"required>
+    </label>
+    </div>
+    <div class="form-control">
+    <label>Email
+        <input type="email"id="email" name="email"placeholder="Enter Your Email"required></label>
+        </div>
+        <div class="form-control">
+    <label>Age(optional)<input type="number" min="18"max="100" name="age" placeholder="Age"></label>
+</div>
+<div class="form-control">
+    <label>Which option best describes you?</label>
+    <select>
+        <option>Student</option>
+        <option>Intern</option>
+        <option>Professional</option>
+        <option>Others</option>
+    </select>
+</div>
+<div class="form-control">
+<label>Would you recommend marconfee's store to a friends?</label>
+<input type="radio"name="choice">Yes
+<input type="radio"name="choice">No
+<input type="radio"name="choice">Maybe
+</div>
+<div class="form-control">
+    <label>How did you get to know about marconfee's store</label>
+    <input type="checkbox"name="select">A Friend
+    <input type="checkbox"name="select">Work
+    <input type="checkbox"name="select">Social Media
+    <input type="checkbox"name="select">School
+    <input type="checkbox"name="select">Family
+</div>
+<div class="form-control">
+    <label>Any comments or suggestions</label>
+    <textarea placeholder="Enter your comments here"></textarea>
+</div>
+<button type="submit">Submit</button>
+</fieldset>
+    </form>
+ </body>  
+
+</html>
